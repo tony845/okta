@@ -30,23 +30,7 @@ public class TestServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		//response.getWriter().append("Served at: ").append(request.getContextPath());
-		
-		//how to pull okta data from request??
-		JsonObject json = new JsonObject();
-		JsonArray todos = new JsonArray();
-		
-		//json.addProperty("firstName", request.getParameter("user[profile][firstName]"));
-		
-		request.setAttribute("test", "tony");
-		
-		//response.setContentType("application/json");
-		//response.setCharacterEncoding("UTF-8");
-		//response.getWriter().print(json);
-		//response.getWriter().flush();
-		//response.getWriter().close();
-		return;
-		//request.getRequestDispatcher("main.html").forward(request, response);
+		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
 	/**
@@ -68,14 +52,5 @@ public class TestServlet extends HttpServlet {
 		response.getWriter().close();
 		//request.getRequestDispatcher("/index.html").forward(request, response);
 	}
-	
-	/*
-	 * private JsonArray getTodoList(String userID) {
-	 * 
-	 * 
-	 * 
-	 * 
-	 * }
-	 */
 
 }
