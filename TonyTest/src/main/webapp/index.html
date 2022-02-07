@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link type="text/css" rel="stylesheet" href="okta.css"/>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="okta.js"></script>
+	<!-- Latest CDN production Javascript and CSS -->
+	<script src="https://global.oktacdn.com/okta-signin-widget/6.0.0/js/okta-sign-in.min.js" type="text/javascript"></script>
+	
+	<link href="https://global.oktacdn.com/okta-signin-widget/6.0.0/css/okta-sign-in.min.css" type="text/css" rel="stylesheet"/>
+	<title>Take Home</title>
+</head>
+
+<body style="background-image: url('background-greywhite.jpg')">
+	<div id="title" class="heading"><h1>Take Home Challenge</h1></div>
+	<div id="loggedinTitle" class="heading" style="display:none"><h1><span></span> To-Do List</h1></div>
+	<div id="widget-container"></div>
+	
+	<div id="todo_wrapper" class="wrapper" style="display:none"></div>
+	<div id="buttons" class="wrapper" style="display:none">
+		<button type="button" id="addNew" class="standard">Add Item</button>
+		<button type="button" id="submit" class="adding" style="display:none">Submit</button>
+		<button type="button" id="cancel" class="adding" style="display:none">Cancel</button>
+		<br><br><button type="button" id="logout">Logout</button>
+	</div>
+</body>
+</html>

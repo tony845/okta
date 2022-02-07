@@ -1,0 +1,18 @@
+.heading{
+	text-align:center;
+}
+
+.wrapper{
+	width: 50vw;
+	margin: auto;
+}
+
+.item{
+	display:grid;
+	grid-template-columns: 5% auto;
+	padding-bottom: 5px;
+}
+
+#todo_wrapper{
+	padding-bottom:10px;
+}
